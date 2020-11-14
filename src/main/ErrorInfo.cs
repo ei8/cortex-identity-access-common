@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,6 +11,7 @@ namespace ei8.Cortex.IdentityAccess.Common
         {
         }
 
+        [JsonConstructor]
         public ErrorInfo(string description, ErrorType type)
         {
             this.Description = description;
