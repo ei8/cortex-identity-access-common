@@ -16,8 +16,8 @@ namespace ei8.Cortex.IdentityAccess.Common
             this.Active = active;
         }
 
-        public Guid UserNeuronId { get; private set; }
+        public Guid UserNeuronId { get; set; }
 
-        public bool Active { get; private set; }
+        public bool Active { get; set; }
     }
 }
